@@ -14,7 +14,7 @@ return new class extends Migration
             $table->string(column: "name");
             $table->string(column: "title");
             $table->string(column: "city");
-            $table->string(column: "about_me");
+            $table->text(column: "about_me");
             $table->string(column: "profile_img");
             $table->string(column: "cv_pdf");
             $table->string(column: "github_link");

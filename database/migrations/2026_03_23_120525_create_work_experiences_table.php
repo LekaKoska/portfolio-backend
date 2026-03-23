@@ -13,7 +13,7 @@ return new class extends Migration
             $table->id();
             $table->string(column: "company_name");
             $table->string(column: "project_link")->nullable();
-            $table->string(column: "job_desc");
+            $table->text(column: "job_desc");
             $table->date(column: "start_date");
             $table->date(column: "end_date")->nullable();
             $table->boolean(column: "is_current")->default(value: false);
