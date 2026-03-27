@@ -1,11 +1,11 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Languages</title>
-</head>
-<body>
-    {{$languages}}
-</body>
-</html>
+<section class="portfolio-card">
+    <h2 class="portfolio-title mb-5">Languages</h2>
+
+    <div class="flex flex-wrap gap-2">
+        @foreach($languages as $language)
+            <span class="portfolio-pill">
+                {{ $language->name }}
+            </span>
+        @endforeach
+    </div>
+</section>

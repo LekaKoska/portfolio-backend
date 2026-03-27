@@ -1,11 +1,11 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
-</head>
-<body>
-    {{$interests}}
-</body>
-</html>
+<section class="portfolio-card">
+    <h2 class="portfolio-title mb-5">Interests</h2>
+
+    <div class="flex flex-wrap gap-2">
+        @foreach($interests as $interest)
+            <span class="portfolio-pill">
+                {{ $interest->name }}
+            </span>
+        @endforeach
+    </div>
+</section>

@@ -1,11 +1,23 @@
 @extends("layouts.app")
 
 @section("content")
-  @include("sections.profile")
-  @include("sections.education")
-  @include("sections.interests")
-  @include("sections.skills")
-  @include("sections.work_experience")
-  @include("sections.languages")
-@endsection
 
+    <div class="portfolio-grid">
+        <div class="lg:col-span-2">
+            @include("sections.profile")
+        </div>
+
+        <aside class="portfolio-sidebar">
+            @include("sections.skills")
+            @include("sections.interests")
+            @include("sections.languages")
+            @include("sections.education")
+        </aside>
+
+        <main class="portfolio-main">
+            @include("sections.about")
+            @include("sections.work_experience")
+        </main>
+    </div>
+
+@endsection
