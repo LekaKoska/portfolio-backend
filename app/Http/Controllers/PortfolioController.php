@@ -8,14 +8,15 @@ use App\Models\Languages;
 use App\Models\Profile;
 use App\Models\TechnicalSkills;
 use App\Models\WorkExperience;
-use Illuminate\Http\JsonResponse;
+use Illuminate\View\View;
 
 class PortfolioController extends Controller
 {
-    public function index(): JsonResponse
+
+    public function index(): View
     {
-        return response()->json([
-            'profile' => Profile::all(),
+        return view(view: "portfolio.index",
+            data: ['profile' => Profile::all(),
             'experience' => WorkExperience::all(),
             'education' => Education::all(),
             'interests' => Interests::all(),
@@ -23,4 +24,5 @@ class PortfolioController extends Controller
             'skills' => TechnicalSkills::all()
         ]);
     }
+
 }
