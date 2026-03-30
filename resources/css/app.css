@@ -55,11 +55,19 @@
     }
 
     .portfolio-avatar {
-        @apply h-28 w-28 rounded-2xl object-cover ring-1 ring-slate-200 shadow-sm transition;
+        @apply h-56 w-56 rounded-2xl object-cover ring-1 ring-slate-200 shadow-sm transition;
+        object-position: 50% 12%;
+        transform-origin: top center;
+        backface-visibility: hidden;
+        will-change: transform;
     }
 
     .portfolio-avatar-wrap {
-        @apply relative inline-flex;
+        @apply relative inline-flex overflow-hidden rounded-2xl;
+    }
+
+    .portfolio-avatar--zoomTop {
+        @apply scale-[1.16] translate-y-[-10px];
     }
 
     .portfolio-avatar-wrap::after {
@@ -72,6 +80,6 @@
     }
 
     .portfolio-avatar-wrap:hover .portfolio-avatar {
-        @apply -translate-y-0.5 shadow-md;
+        @apply -translate-y-0.5 scale-[1.06] shadow-md;
     }
 }
