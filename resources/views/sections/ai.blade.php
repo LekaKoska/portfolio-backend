@@ -1,4 +1,4 @@
-<section class="portfolio-card w-full mt-16">
+<section class="portfolio-card w-full mt-16" id="ai-chat">
     <div class="flex flex-col">
 
         <!-- Header -->

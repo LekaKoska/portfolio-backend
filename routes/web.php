@@ -12,3 +12,5 @@ Route::get('/download-cv', function () {
 
     return response()->download($path);
 })->name('cv.download');
+
+Route::get("/chat", [PortfolioController::class, "chat"])->name("ai.chat");
