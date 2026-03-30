@@ -20,4 +20,8 @@
         </main>
     </div>
 
+    <div class="mt-14">
+        @include("sections.ai")
+    </div>
+
 @endsection

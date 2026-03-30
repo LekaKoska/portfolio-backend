@@ -6,7 +6,7 @@
                     alt="{{ $user->name }}"
                     class="portfolio-avatar portfolio-avatar--zoomTop"
                 />
-            <h1 class="mt-5 text-3xl font-semibold tracking-tight text-slate-900">
+            <h1 class="mt-6 text-3xl font-semibold tracking-tight text-slate-900">
                 {{ $user->name }}
             </h1>
             <p class="mt-1 text-sm font-medium text-slate-500">
@@ -69,6 +69,9 @@
                         Download CV
                     </a>
             @endif
+
+                <a href="">Ask AI about Alek</a>
+                <a href="">Contact me</a>
         </div>
     </section>
 @endforeach
