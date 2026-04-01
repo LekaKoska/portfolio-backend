@@ -14,3 +14,11 @@ Route::get('/download-cv', function () {
 })->name('cv.download');
 
 Route::get("/chat", [PortfolioController::class, "chat"])->name("ai.chat");
+
+
+Route::get('/test-agent', function () {
+    $agent = new \App\Ai\Agents\ChatAssistant();
+
+    $response = $agent->prompt('How many years Alek learn programming');
+    return $response->text;
+});
