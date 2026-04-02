@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Ai\Agents\ChatAssistant;
 use App\Models\Education;
 use App\Models\Interests;
 use App\Models\Languages;
 use App\Models\Profile;
 use App\Models\TechnicalSkills;
 use App\Models\WorkExperience;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 use Illuminate\View\View;
 
 class PortfolioController extends Controller
@@ -23,6 +26,12 @@ class PortfolioController extends Controller
             'languages' => Languages::all(),
             'skills' => TechnicalSkills::all()
         ]);
+    }
+
+    public function chat(Request $request): JsonResponse
+    {
+        $response = (new ChatAssistant())->prompt($request->input("chat-message"));
+        return response()->json(['reply' => $response]);
     }
 
 }

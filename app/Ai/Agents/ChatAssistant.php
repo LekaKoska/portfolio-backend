@@ -43,25 +43,15 @@ class ChatAssistant implements Agent, Conversational, HasTools
     - Do not answer personal questions or topics outside of a professional context.
     - If a question falls outside your knowledge or context, politely let the user know and suggest they download Alek's CV or reach out to him through the contact form on this portfolio.
     - If the user wants to explore more projects or experience in detail, direct them to his GitHub profile: https://github.com/LekaKoska
+    - Always respond in plain text. Do not use Markdown formatting, asterisks, bold, or any special characters for formatting.
     PROMPT;
 
     }
 
-    /**
-     * Get the list of messages comprising the conversation so far.
-     *
-     * @return Message[]
-     */
     public function messages(): iterable
     {
         return [];
     }
-
-    /**
-     * Get the tools available to the agent.
-     *
-     * @return Tool[]
-     */
     public function tools(): iterable
     {
         return [];
