@@ -60,7 +60,7 @@
             <div class="flex gap-2 items-center">
                 <input type="text" placeholder="Ask about Alek..." name="chat-message" id="chat-input" class="flex-1 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-400/50 transition">
                 <button type="button" id="send-btn" class="rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium text-white hover:bg-slate-700 active:scale-95 transition whitespace-nowrap">
-                    Send ↗
+                     Send
                 </button>
             </div>
 

@@ -22,6 +22,7 @@
 
     <div class="mt-14">
         @include("sections.ai")
+        @include("sections.contact")
     </div>
 
 @endsection

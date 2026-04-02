@@ -15,3 +15,4 @@ Route::get('/download-cv', function () {
 
 Route::post("/chat", [PortfolioController::class, "chat"])->name("ai.chat");
 
+Route::post("/send-form", [PortfolioController::class, "contact"])->name("contact.form");
