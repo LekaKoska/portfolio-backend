@@ -22,7 +22,7 @@ class PortfolioController extends Controller
     public function index(): View
     {
         return view(view: "portfolio.index",
-            data: ['profile' => Profile::all(),
+            data: ['profile' => Profile::first(),
             'experience' => WorkExperience::all(),
             'education' => Education::all(),
             'interests' => Interests::all(),
