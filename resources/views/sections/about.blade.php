@@ -1,9 +1,9 @@
-@foreach($profile as $user)
+
     <section class="portfolio-card">
         <h2 class="portfolio-title mb-5">About Me</h2>
 
         <p class="text-sm text-slate-600 leading-relaxed">
-            {{ $user->about_me }}
+            {{ $profile->about_me }}
         </p>
     </section>
-@endforeach
+
