@@ -11,5 +11,9 @@ cmds = [
     "php artisan view:cache"
 ]
 
-[start]
-cmd = "php artisan migrate --force && php artisan storage:link && /usr/bin/unitd --no-daemon --control unix:/run/control.unit.sock"
+[phases.prestart]
+cmds = [
+    "php artisan migrate --force",
+    "php artisan db:seed --force",
+    "php artisan storage:link"
+]
