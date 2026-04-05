@@ -10,7 +10,9 @@ Route::get('/download-cv', function () {
     $profile = Profile::first();
     $path = public_path('cv/' . $profile->cv_pdf);
 
-    return response()->download($path);
+    return response()->download($path, 'Alek-Koska-CV.pdf', [
+        'Content-Disposition' => 'attachment; filename="Alek-Koska-CV.pdf"'
+    ]);
 })->name('cv.download');
 
 Route::post("/chat", [PortfolioController::class, "chat"])->name("ai.chat");
