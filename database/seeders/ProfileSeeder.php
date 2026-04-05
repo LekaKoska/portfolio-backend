@@ -20,7 +20,7 @@ class ProfileSeeder extends Seeder
              I primarily work with Laravel, where I build REST APIs, write tests with PHPUnit, automate processes, use Swagger annotations, Postman, and design databases.
              I pay close attention to clean code and design patterns. On the frontend, I use JavaScript to create dynamic user interfaces.
              My goal is to write clean and readable code that everyone can understand.",
-            "profile_img" => "zl.jpg",
+            "profile_img" => "zl.png",
             "cv_pdf" => "alek-koska-cv.pdf",
             "github_link" => "https://github.com/LekaKoska",
             "linkedin_link" => "https://linkedin.com/in/koskaalek/",
