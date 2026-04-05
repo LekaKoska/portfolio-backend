@@ -10,6 +10,8 @@ class ProfileSeeder extends Seeder
 {
     public function run(): void
     {
+        Profile::truncate();
+
         Profile::create([
             "name" => "Alek Koska",
             "title" => "Laravel Developer",

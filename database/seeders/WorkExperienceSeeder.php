@@ -10,6 +10,8 @@ class WorkExperienceSeeder extends Seeder
 {
     public function run(): void
     {
+
+        WorkExperience::truncate();
         $data = [
             [
                 "company_name" => "Nikolić Technology",

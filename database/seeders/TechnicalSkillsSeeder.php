@@ -11,6 +11,9 @@ class TechnicalSkillsSeeder extends Seeder
 
     public function run(): void
     {
+
+        TechnicalSkills::truncate();
+
         $skills = ["PHP/Laravel", "JavaScript", "MySQL", "MongoDB", "Docker"];
         foreach ($skills as $skill)
         {

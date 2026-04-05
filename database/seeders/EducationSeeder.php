@@ -10,7 +10,7 @@ class EducationSeeder extends Seeder
 {
     public function run(): void
     {
-
+        Education::truncate();
 
         Education::create([
             "school_name" => "Self-Taught Web Developer",

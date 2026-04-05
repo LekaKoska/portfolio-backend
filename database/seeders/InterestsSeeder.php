@@ -10,6 +10,8 @@ class InterestsSeeder extends Seeder
 {
     public function run(): void
     {
+        Interests::truncate();
+
         $interests = [
             "Backend Architecture",
             "Design Patterns",

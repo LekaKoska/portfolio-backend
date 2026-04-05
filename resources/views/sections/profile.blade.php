@@ -4,7 +4,7 @@
 
             <div class="portfolio-avatar-wrap shrink-0">
                 <img
-                    src="{{ asset('storage/' . $profile->profile_img) }}"
+                    src="{{ asset('avatar/' . $profile->profile_img) }}"
                     alt="{{ $profile->name }}"
                     class="portfolio-avatar portfolio-avatar--zoomTop"
                 />

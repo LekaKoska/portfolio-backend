@@ -8,7 +8,7 @@ Route::get('/', [PortfolioController::class, "index"]);
 
 Route::get('/download-cv', function () {
     $profile = Profile::first();
-    $path = storage_path('app/public/cv/' . $profile->cv_pdf);
+    $path = public_path('cv/' . $profile->cv_pdf);
 
     return response()->download($path);
 })->name('cv.download');

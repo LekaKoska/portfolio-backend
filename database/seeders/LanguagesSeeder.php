@@ -11,6 +11,7 @@ class LanguagesSeeder extends Seeder
 {
     public function run(): void
     {
+        Languages::truncate();
         $languages = ["Serbian", "English"];
 
         foreach ($languages as $language)
