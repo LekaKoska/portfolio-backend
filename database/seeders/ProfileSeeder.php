@@ -21,7 +21,7 @@ class ProfileSeeder extends Seeder
              I pay close attention to clean code and design patterns. On the frontend, I use JavaScript to create dynamic user interfaces.
              My goal is to write clean and readable code that everyone can understand.",
             "profile_img" => "profile.jpg",
-            "cv_pdf" => "cv/alek-koska-cv.pdf",
+            "cv_pdf" => "alek-koska-cv.pdf",
             "github_link" => "https://github.com/LekaKoska",
             "linkedin_link" => "https://linkedin.com/in/koskaalek/",
             "gmail" => "koska.alek24@gmail.com",
