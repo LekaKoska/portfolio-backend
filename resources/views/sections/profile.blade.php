@@ -92,9 +92,3 @@
             </div>
         </div>
     </section>
-
-
-    git add -f /public/avatar/profile.jpg
-    git add -f /public/cv/alek-koska-cv.pdf
-    git commit -m "Add avatar and CV"
-    git push
