@@ -18,3 +18,12 @@ Route::get('/download-cv', function () {
 Route::post("/chat", [PortfolioController::class, "chat"])->name("ai.chat");
 
 Route::post("/send-form", [PortfolioController::class, "contact"])->name("contact.form");
+
+Route::get('/health', function () {
+    try {
+        DB::connection()->getPdo();
+        return response()->json(['status' => 'ok', 'db' => 'connected']);
+    } catch (\Exception $e) {
+        return response()->json(['status' => 'error', 'message' => $e->getMessage()], 500);
+    }
+});
